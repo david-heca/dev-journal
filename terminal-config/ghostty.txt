@@ -1,0 +1,33 @@
+# === Theme ===
+theme = dark:pure-black,light:Rose Pine Dawn
+
+# === Font ===
+font-family = CaskaydiaCove Nerd Font
+font-size = 15
+font-thicken = true
+
+# === Window ===
+macos-titlebar-style = tabs
+window-padding-x = 20
+window-padding-y = 15
+window-padding-balance = true
+background-opacity = 0.80
+background-blur-radius = 20
+
+# === Cursor ===
+cursor-style = bar
+cursor-style-blink = false
+
+# === Behavior ===
+mouse-hide-while-typing = true
+macos-option-as-alt = left
+copy-on-select = clipboard
+confirm-close-surface = false
+shell-integration-features = no-cursor
+
+# === Splits ===
+unfocused-split-opacity = 0.85
+
+# === Performance ===
+minimum-contrast = 1.5
+window-save-state = always
