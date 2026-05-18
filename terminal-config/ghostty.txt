@@ -1,5 +1,5 @@
 # Theme
-theme = dark:pure-black,light:Rose Pine Dawn
+theme = dark:Monokai Pro Spectrum,light:Monokai Pro Light Sun
 
 # Font
 font-family = CaskaydiaCove Nerd Font
