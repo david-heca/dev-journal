@@ -1,12 +1,12 @@
-# === Theme ===
+# Theme
 theme = dark:pure-black,light:Rose Pine Dawn
 
-# === Font ===
+# Font
 font-family = CaskaydiaCove Nerd Font
 font-size = 15
 font-thicken = true
 
-# === Window ===
+# Window
 macos-titlebar-style = tabs
 window-padding-x = 20
 window-padding-y = 15
@@ -14,20 +14,45 @@ window-padding-balance = true
 background-opacity = 0.80
 background-blur-radius = 20
 
-# === Cursor ===
+# Cursor
 cursor-style = bar
 cursor-style-blink = false
+adjust-cursor-thickness = 2
 
-# === Behavior ===
+# Behavior
 mouse-hide-while-typing = true
 macos-option-as-alt = left
 copy-on-select = clipboard
 confirm-close-surface = false
+shell-integration = detect
 shell-integration-features = no-cursor
 
-# === Splits ===
+# Splits
 unfocused-split-opacity = 0.85
 
-# === Performance ===
+# Performance
 minimum-contrast = 1.5
+scrollback-limit = 10000
+
+# State
 window-save-state = always
+
+# Security
+clipboard-paste-protection = true
+clipboard-paste-bracketed-safe = true
+
+# Keybindings
+
+# Tabs
+keybind = cmd+t=new_tab
+keybind = cmd+shift+left=previous_tab
+keybind = cmd+shift+right=next_tab
+keybind = cmd+w=close_surface
+
+# Splits
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
+keybind = cmd+alt+left=goto_split:left
+keybind = cmd+alt+right=goto_split:right
+keybind = cmd+alt+up=goto_split:top
+keybind = cmd+alt+down=goto_split:bottom
