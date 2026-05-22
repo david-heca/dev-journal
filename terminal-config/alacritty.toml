@@ -1,0 +1,119 @@
+# Configuración de Alacritty (Windows + PowerShell 7)
+
+[font]
+builtin_box_drawing = true
+size = 13.0
+offset = { x = 0, y = 2 }
+glyph_offset = { x = 0, y = 2 }
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "CaskaydiaCove Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "CaskaydiaCove Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "CaskaydiaCove Nerd Font"
+style = "Bold Italic"
+
+# Shell principal
+
+[terminal.shell]
+program = "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+args = ["-NoLogo"]
+
+# Ventana
+
+[window]
+decorations = "full"
+startup_mode = "Windowed"
+dynamic_title = true
+padding = { x = 12, y = 12 }
+dimensions = { columns = 110, lines = 30 }
+opacity = 0.98
+
+# Cursor
+
+[cursor]
+style = { shape = "Beam", blinking = "Off" }
+blink_interval = 500
+thickness = 0.2
+
+# Scroll
+
+[scrolling]
+history = 10000
+multiplier = 5
+
+# Clipboard
+
+[selection]
+save_to_clipboard = true
+
+# Keybindings
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "Insert"
+mods = "Shift"
+action = "PasteSelection"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[[keyboard.bindings]]
+key = "Equals"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Alt"
+action = "ToggleFullscreen"
+
+[[keyboard.bindings]]
+key = "N"
+mods = "Control|Shift"
+action = "SpawnNewInstance"
+
+[[keyboard.bindings]]
+key = "F"
+mods = "Control|Shift"
+action = "SearchForward"
+
+[[keyboard.bindings]]
+key = "PageUp"
+mods = "Shift"
+action = "ScrollPageUp"
+
+[[keyboard.bindings]]
+key = "PageDown"
+mods = "Shift"
+action = "ScrollPageDown"
+
+# Entorno
+
+[env]
+TERM = "xterm-256color"
